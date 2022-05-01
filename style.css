@@ -17,6 +17,10 @@ footer {
     background-color: #333333;
 }
 
+section {
+    border: 5px #ffffff solid;
+}
+
 #navbar {
     display: flex;
     background-color: #333;
@@ -51,10 +55,10 @@ footer {
 
 }
 
-#colors{
+#colors {
     display: grid;
-    grid-template-columns: repeat(4,[col] 100px);
-    grid-template-rows: repeat(4,[row] auto);
+    grid-template-columns: repeat(4, [col] 100px);
+    grid-template-rows: repeat(4, [row] auto);
     gap: 0px;
     text-align: center;
     justify-content: center;
@@ -62,33 +66,33 @@ footer {
     color: #ffffff;
 }
 
-#colors h3{
+#colors h3 {
     padding: 10px;
     margin: 0;
 }
 
-.black{
+.black {
     grid-column: col 1/span 4;
     grid-row: row 1;
     background-color: #000000;
     border: 1px #ffffff solid;
 }
 
-.green{
+.green {
     grid-column: col 1/span 2;
     grid-row: row 2;
     background-color: #2DE000;
     border: 1px #ffffff solid;
 }
 
-.pink{
+.pink {
     grid-column: col 3/span 2;
     grid-row: row 2;
     background-color: #ffc4c4;
     border: 1px #ffffff solid;
 }
 
-.orange{
+.orange {
     grid-column: col 1;
     grid-row: row 3;
     background-color: #FF980B;
@@ -96,17 +100,47 @@ footer {
 
 }
 
-.red{
+.red {
     grid-column: col 1/span 4;
     grid-row: row 4;
     background-color: #FF0000;
     border: 1px #ffffff solid;
 }
 
-.gray{
+.gray {
     grid-column: col 2/span 3;
     grid-row: row 3;
     background-color: #4D4D4D;
     border: 1px #ffffff solid;
+
+}
+
+#albums {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    gap: 10px;
+}
+
+#albums img:hover {
+    display: flex;
+    flex-grow: .5;
+}
+
+#albums img {
+    width: 200px;
+}
+
+#games img {
+    padding-left: 65px;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+@media screen and (min-width: 400px) {
+    #albums {
+        flex-wrap: wrap;
+    }
 
 }
